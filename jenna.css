@@ -1,0 +1,351 @@
+*{
+    margin: 0px;
+    padding: 0px;  
+  
+      
+  }
+  body{
+      background-color: rgb(247, 230, 211);
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  
+    
+  
+  header{
+    
+      background-image: url('assets/nav.PNG');
+      background-size: cover;
+      background-position: center; 
+      height: 80px;
+      box-shadow: 0 5px 10px rgb(0, 0,0,.1);
+      
+      
+  }
+  
+  
+  /* Navbar container */
+  .navbar {
+      
+      overflow: hidden;
+      font-family: Arial;
+      padding-left: 800px;
+      padding-right: 300px;
+      
+      
+    }
+    
+    /* Links inside the navbar */
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: rgb(23, 23, 23);
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      
+    
+    }
+
+
+    a:hover{
+        background-color: #cfa7a7;
+    }
+
+
+    /*Responsive navbar*/
+    @media (max-width: 767px) {
+        .navbar {
+          padding-left: 0;
+          padding-right: 0;
+        }
+        .navbar a {
+          display: block;
+          float: none;
+          text-align: left;
+        }
+      }
+      
+      /* Navbar styles for screens 768px and larger */
+      @media (min-width: 768px) {
+        .navbar {
+          overflow: hidden;
+          font-family: Arial;
+          padding-left: 800px;
+          padding-right: 300px;
+        }
+        .navbar a {
+          float: left;
+          font-size: 16px;
+          color: rgb(23, 23, 23);
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+        }
+      }
+    
+  
+    
+    
+   
+
+
+/*Styling home section*/
+
+
+    
+.home-container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.home-container video{
+    width: 100%;
+    height: 100%;
+}
+
+.text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(224, 223, 223, 0.756);
+    color: rgb(39, 39, 38);
+    font-size: 20px;
+    margin-left: 350px;
+    margin-top: 300px;
+    padding: 50px;
+    border-radius: 7px;
+    box-shadow: 0 5px 10px rgba(54, 54, 54, 0.1);
+    
+
+}
+
+
+
+
+   
+
+
+
+    /*Styling about section*/
+    #About {
+        background-image: url('assets/pexels-mart-production-8107993.jpg');
+        background-position:center;
+        box-shadow: 5px 5px 20px black;
+        
+        
+    }
+
+    .about-card{
+        height: 700px;
+        width: 500px;
+        margin-left: 380px;
+        padding: 50px;
+        
+       
+        
+    }
+
+    .about-text{
+        height: 500px;
+        width: 500px;
+        padding: 50px;
+        margin-top: 50px;
+        background-color: rgba(250, 233, 218, 0.707);
+        box-shadow: 0 5px 10px rgb(0, 0,0,.1);
+        border-radius: 10px;
+    }
+
+    h2{
+        padding-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        color: rgb(44, 44, 44);
+    }
+
+    span{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        color: rgb(45, 45, 45);
+    }
+
+
+    /*Styling minéraux section*/
+
+    #Minéraux {
+        padding-bottom: 200px;
+
+    }
+
+    #Minéraux img {
+        background-color: white;
+    }
+
+
+
+
+    h3{
+        margin: 100px;
+        text-align: center;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 40px;
+        background-color: #ceb3b3;
+        border-radius: 5px;
+        box-shadow: 0 5px 10px rgb(0, 0,0,.1);
+    }
+
+    h4{
+        margin:15px;
+        font-size: 35px;
+}
+
+
+.intro p {
+    font-size: 15px;
+    margin: 20px;
+    overflow: hidden;
+
+   
+}
+
+    .intro{
+        top: 50%;
+        left: 0;
+        padding: 6px;
+        height: 200px;
+        width: 400px;
+        box-sizing: border-box;
+        position: absolute;
+        color: rgb(30, 30, 30);
+        background-color: rgba(175, 174, 174, 0.681);
+        transform: translateY(100%);
+        transition: transform 0.3s ease;
+        
+    }
+
+
+    .m-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 50px;
+        padding-right: 50px ;
+        gap: 200px;
+       
+    }
+
+    .m-container img{
+        height: 400px;
+        transition: 5s;
+        
+    }
+
+    .card {
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        border-radius: 5px;
+        position: relative;
+        box-shadow: 5px 5px 20px black;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
+
+   .card:hover{
+    transform: scale(1.05);
+   }
+
+
+   .card:hover .intro {
+    transform: translateY(0);
+  }
+
+
+
+/*Styling contact section*/
+
+
+#Contact{
+    padding: 50px;
+}
+
+h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+span{
+    font-size: 20px;
+    padding-left: 440px;
+}
+
+
+.c-container {
+    background-color: rgb(252, 247, 241);
+    margin-left:300px ;
+    padding: 50px;
+    width: 50%;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="email"], input[type="tel"], textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+   
+  }
+  
+  button[type="submit"] {
+    background-color: #cfa7a7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #ca9595;
+    margin-bottom: 80px;
+  }
+
+
+  /*Responsive contact section*/
+
+  @media screen and (max-width: 768px) {
+    .c-container {
+      width: 100%;
+      margin-left: 0;
+    }
+    
+    span {
+      padding-left: 0;
+    }
+  } 
+
+
+
+  
